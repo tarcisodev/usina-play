@@ -1,0 +1,50 @@
+.toolbar-header,
+.toolbar-content,
+.toolbar-content ion-item {
+  background-color: var(--ion-color-dark-tint);
+  --background: var(--ion-color-dark-tint);
+  color: var(--ion-color-dark-contrast);
+  --color: var(--ion-color-dark-contrast);
+}
+
+.toolbar-content {
+  padding-top: 0.75rem;
+  border-radius: 0px 0px 50px 50px;
+  --border-radius: 0px 0px 50px 50px;
+  // box-shadow: 0 0 2px 2px black;
+}
+
+.toolbar-content ion-item {
+  border-radius: 0px 0px 50px 50px;
+  --border-radius: 0px 0px 50px 50px;
+}
+
+ion-content {
+  background-color: var(--ion-color-dark);
+  --background: var(--ion-color-dark);
+}
+
+.icon-notifications {
+  font-size: 2rem;
+  color: var(--ion-color-dark);
+  background-color: #f98727;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+.ion-badge {
+  position: absolute;
+  top: -5px;
+  right: 4px;
+}
+
+ion-avatar {
+  margin-left: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.nivel-roxo {
+  color: #2c1074;
+  --color: #2c1074;
+}
