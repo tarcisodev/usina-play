@@ -3,7 +3,6 @@ import {
   Component,
   OnInit
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 //#endregion
 
 @Component({
@@ -12,12 +11,23 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  public folder: string;
+  //#region publics
+  slideOpts = {
+    initialSlide: 0,
+    slidesPerView: 1.3,
+    pagination: false,
+    autoHeight: true
+  };
+  //#endregion
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  //#region constructor
+  constructor() { }
+  //#endregion
 
+  //#region lifecycles
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+
   }
+  //#endregion
 
 }

@@ -6,7 +6,7 @@
     </ion-buttons>
 
     <ion-title class="ion-text-center">
-      <img src="../../../assets/imgs/thumb_logo.png"
+      <img src="../../../assets/imgs/logo_white.png"
            class="logo-thumb">
     </ion-title>
 
@@ -15,53 +15,144 @@
                 name="notifications-circle"
                 class="icon-notifications"></ion-icon>
       <ion-badge color="primary"
-                 class="ion-badge">93</ion-badge>
+                 class="notification-badge">93</ion-badge>
     </ion-buttons>
   </ion-toolbar>
+</ion-header>
 
+<ion-content [fullscreen]="true">
   <ion-toolbar class="toolbar-content">
     <ion-grid>
       <ion-row>
         <ion-col>
           <ion-item lines="none">
             <ion-avatar slot="start">
-              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+              <img src="https://pt.gravatar.com/userimage/110051320/92034f94a82d489b0fbd787a7de3a21d.png?size=200">
             </ion-avatar>
             <ion-label>
               <h1>Tarciso Júnior</h1>
-              <h2 class="nivel-roxo">
-                Nível roxo
-              </h2>
+              <p class="nivel-roxo">
+                <strong>
+                  Nível Roxo
+                </strong>
+              </p>
             </ion-label>
           </ion-item>
         </ion-col>
       </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <ion-item class="ion-text-center">
-            <ion-buttons>
+      <ion-row class="ion-justify-content-center">
+        <ion-col class="ion-align-self-center">
+          <ion-item lines="none">
+            <ion-buttons class="header-buttons">
               <ion-button>
-                <ion-icon name="musical-note"></ion-icon>
-                <ion-label>MEU CORPO</ion-label>
+                <ion-icon name="body"
+                          size="small"
+                          class="border orange">
+                </ion-icon>
+                <ion-label class="pr-1">
+                  MEU CORPO
+                </ion-label>
               </ion-button>
 
               <ion-button>
-                <ion-icon name="musical-note"></ion-icon>
-                <ion-label>MEU CORPO</ion-label>
+                <ion-icon name="trophy"
+                          size="small"
+                          class="border orange">
+                </ion-icon>
+                <ion-label class="pr-1">
+                  OBJETIVOS E CONQUISTAS
+                </ion-label>
               </ion-button>
             </ion-buttons>
           </ion-item>
         </ion-col>
       </ion-row>
     </ion-grid>
-
-
-
-
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+  <div class="sections">
+    <ion-title>
+      <p class="ion-text-uppercase">
+        <strong>
+          Personal Online
+        </strong>
+        <ion-icon name="add-outline"
+                  size="large"
+                  class="border float-right orange">
+        </ion-icon>
+      </p>
+    </ion-title>
 
+    <ion-slides pager="true"
+                [options]="slideOpts">
+      <ion-slide class="card-novo-treino ion-text-left">
+        <ion-card>
+          <img src="https://drbrunofontes.com.br/wp-content/uploads/2017/03/dor_ci%C3%A1tica.jpg">
+          <div class="novo-treino">
+            NOVO <br>
+            TREINO
+            <ion-icon name="add-outline"
+                      size="large"
+                      class="border dark-contrast">
+            </ion-icon>
+          </div>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide class="card-novo-treino ion-text-left">
+        <ion-card>
+          <img src="https://www.altoastral.com.br/media/_versions/legacy/2020/04/aplicativos-de-yoga_widexl.jpg">
+          <div class="card-title">
+            <strong>
+              YOGA EXPERIMENTAL
+            </strong>
+          </div>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="sections">
+    <ion-title>
+      <p class="ion-text-uppercase">
+        <strong class="ion-text-left">
+          Programas
+          <ion-badge color="primary"
+                     class="ion-badge">NOVO</ion-badge>
+        </strong>
+      </p>
+    </ion-title>
+
+    <ion-slides pager="true"
+                [options]="slideOpts">
+      <ion-slide class="card-novo-treino ion-text-left">
+        <ion-card>
+          <img src="https://www.lojamaria.com.br/wp-content/uploads/2020/09/5506-scaled-e1600887181282.jpg">
+          <div class="card-title">
+            <div>
+              <span class="orange">
+                continuar treinando
+              </span>
+            </div>
+
+            <strong>
+              LEVANTAMENTO DE PESO
+            </strong>
+          </div>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide class="card-novo-treino ion-text-left">
+        <ion-card>
+          <img src="https://www.altoastral.com.br/media/_versions/legacy/2020/04/aplicativos-de-yoga_widexl.jpg">
+          <div class="card-title">
+            <strong>
+              YOGA EXPERIMENTAL
+            </strong>
+          </div>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>

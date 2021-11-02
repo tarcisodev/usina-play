@@ -1,27 +1,32 @@
 .toolbar-header,
 .toolbar-content,
 .toolbar-content ion-item {
-  background-color: var(--ion-color-dark-tint);
+  background: var(--ion-color-dark-tint);
   --background: var(--ion-color-dark-tint);
   color: var(--ion-color-dark-contrast);
   --color: var(--ion-color-dark-contrast);
+}
+
+.logo-thumb {
+  width: 100px;
 }
 
 .toolbar-content {
   padding-top: 0.75rem;
   border-radius: 0px 0px 50px 50px;
   --border-radius: 0px 0px 50px 50px;
-  // box-shadow: 0 0 2px 2px black;
 }
 
 .toolbar-content ion-item {
   border-radius: 0px 0px 50px 50px;
   --border-radius: 0px 0px 50px 50px;
+  background: var(--ion-color-dark-tint);
+  --background: var(--ion-color-dark-tint);
 }
 
 ion-content {
-  background-color: var(--ion-color-dark);
-  --background: var(--ion-color-dark);
+  background: black;
+  --background: black;
 }
 
 .icon-notifications {
@@ -30,9 +35,10 @@ ion-content {
   background-color: #f98727;
   border-radius: 50px;
   margin-right: 1rem;
+  box-shadow: 5px 5px 5px black;
 }
 
-.ion-badge {
+.notification-badge {
   position: absolute;
   top: -5px;
   right: 4px;
@@ -45,6 +51,112 @@ ion-avatar {
 }
 
 .nivel-roxo {
-  color: #2c1074;
+  color: #9c4fd3;
   --color: #2c1074;
+  font-size: 1.25rem;
+  // color: #2c1074;
+  // --color: #2c1074;
+}
+
+.header-buttons ion-label {
+  letter-spacing: -1px;
+  color: #f98727;
+  font-size: 0.7rem;
+}
+
+ion-item ion-buttons.header-buttons {
+  margin: auto;
+  background-color: rgb(0, 0, 0, 0.3);
+  --background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+.border {
+  border-radius: 50px;
+  padding: 3px;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #f98727;
+}
+
+.pr-1 {
+  padding-right: 1px;
+}
+
+ion-slides {
+  height: auto;
+}
+
+.sections p {
+  font-size: 1.5rem;
+  color: var(--ion-color-dark-contrast);
+  letter-spacing: -1px;
+  position: relative;
+}
+
+.sections ion-title p ion-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.6rem;
+  top: -5px;
+}
+
+ion-slides ion-slide ion-card {
+  background: var(--ion-color-dark);
+  box-shadow: inset 0 0 2em black;
+  border-radius: 25px;
+}
+
+ion-slides ion-slide.card-novo-treino {
+  position: relative;
+}
+
+ion-slides ion-slide.card-novo-treino ion-icon {
+  position: absolute;
+  padding: 0.5rem;
+  left: -50%;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+ion-slides ion-slide.card-novo-treino img {
+  opacity: 0.5;
+}
+
+ion-slides ion-slide.card-novo-treino .novo-treino {
+  position: absolute;
+  font-size: 2rem;
+  top: 30%;
+  left: 33%;
+  color: var(--ion-color-dark-contrast);
+  --color: var(--ion-color-dark-contrast);
+  line-height: 27px;
+}
+
+.orange {
+  color: #f98727;
+}
+
+.dark-contrast {
+  color: var(--ion-color-dark-contrast);
+  --color: var(--ion-color-dark-contrast);
+  border: 1px solid var(--ion-color-dark-contrast);
+  --border: 1px solid var(--ion-color-dark-contrast);
+}
+
+.card-title {
+  position: absolute;
+  letter-spacing: -1px;
+  font-size: 1.1rem;
+  bottom: 9%;
+  left: 9%;
+  color: var(--ion-color-dark-contrast);
+  --color: var(--ion-color-dark-contrast);
+}
+
+.swiper-pagination-bullet {
+  opacity: 0 !important;
 }
