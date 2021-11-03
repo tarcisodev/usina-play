@@ -1,8 +1,8 @@
 .toolbar-header,
 .toolbar-content,
 .toolbar-content ion-item {
-  background: var(--ion-color-dark-tint);
-  --background: var(--ion-color-dark-tint);
+  background: #181818;
+  --background: #181818;
   color: var(--ion-color-dark-contrast);
   --color: var(--ion-color-dark-contrast);
 }
@@ -20,8 +20,8 @@
 .toolbar-content ion-item {
   border-radius: 0px 0px 50px 50px;
   --border-radius: 0px 0px 50px 50px;
-  background: var(--ion-color-dark-tint);
-  --background: var(--ion-color-dark-tint);
+  background: #181818;
+  --background: #181818;
 }
 
 ion-content {
