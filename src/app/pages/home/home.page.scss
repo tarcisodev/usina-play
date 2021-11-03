@@ -18,8 +18,8 @@
 }
 
 .toolbar-content ion-item {
-  border-radius: 0px 0px 50px 50px;
-  --border-radius: 0px 0px 50px 50px;
+  // border-radius: 0px 0px 50px 50px;
+  // --border-radius: 0px 0px 50px 50px;
   background: #181818;
   --background: #181818;
 }
@@ -159,4 +159,20 @@ ion-slides ion-slide.card-novo-treino .novo-treino {
 
 .swiper-pagination-bullet {
   opacity: 0 !important;
+}
+
+ion-card {
+  height: 170px;
+}
+
+ion-card img {
+  height: 100%;
+  width: 100%;
+}
+
+.sections ion-badge {
+  background: #f98727;
+  --background: #f98727;
+  background-color: #f98727;
+  --background-color: #f98727;
 }

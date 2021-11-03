@@ -16,7 +16,6 @@ export class HomePage implements OnInit {
     initialSlide: 0,
     slidesPerView: 1.3,
     pagination: false,
-    autoHeight: true
   };
   //#endregion
 
